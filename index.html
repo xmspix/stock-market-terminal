@@ -9,8 +9,36 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
-<body>
-
+<body class="app">
+    <header class="header">
+        <div class="header__logo-container">
+            <img class="logo logo__header" src="./images/logo.png" alt="Stock Market Terminal">
+            <button class="btn btn__menu fa">Menu</button>
+        </div>
+        <div class="header__search">
+            <i class="header__search-icon fa fa-search"></i>
+            <input class="header__search-input" type="text" placeholder="Search">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__list-item"><a class="header__list-link header__list-link-active" href="#">Main</a>
+                </li>
+                <li class="header__list-item"><a class="header__list-link" href="#">News</a></li>
+                <li class="header__list-item"><a class="header__list-link" href="#">Crypto</a></li>
+                <li class="header__list-item"><a class="header__list-link" href="#">Forex</a></li>
+                <li class="header__list-item"><a class="header__list-link" href="#">Commodities</a></li>
+                <li class="header__list-item"><a class="header__list-link" href="#">Indices</a></li>
+                <li class="header__list-item"><a class="header__list-link" href="#">Stocks</a></li>
+                <li class="header__list-item"><a class="header__list-link" href="#">ETFs</a></li>
+                <li class="header__list-item"><a class="header__list-link" href="#">Bonds</a></li>
+            </ul>
+        </nav>
+        <div class="header__status">
+            <i class="header__status-refresh fas fa-sync-alt"></i>
+            <p class="header__status-text">Connected</p>
+        </div>
+        <i class="header__menu fas fa-cog"></i>
+    </header>
 </body>
 
 </html>
