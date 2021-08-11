@@ -1,0 +1,38 @@
+.table {
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.8em;
+    color: var(--font-color-gray);
+
+    &__labels {
+        padding-bottom: 1em;
+    }
+
+    &__header {
+        font-weight: normal;
+        padding-inline: 1em;
+
+        &:not(:last-child) {
+            border-right: 1px solid #3d3e40;
+        }
+    }
+
+    &__body {
+        &::before {
+            content: "";
+            display: block;
+            height: 15px;
+        }
+    }
+
+    &__data {
+        text-align: center;
+        padding: 0.4em;
+    }
+
+    &__row {
+        &:not(:last-child) {
+            border-bottom: 1px solid #3d3e40;
+        }
+    }
+}

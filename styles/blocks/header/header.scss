@@ -1,0 +1,92 @@
+@import "../../mixins/mixin";
+
+.header {
+    position: relative;
+    display: flex;
+    background: var(--bg-color-secondary);
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+    color: var(--font-color-main);
+
+    &__logo-container {
+        display: flex;
+        align-items: center;
+        margin: auto;
+
+        &::after {
+            @include navbar_border();
+        }
+    }
+
+    &__search {
+        @include search(var(--bg-color-secondary));
+
+        &::after {
+            @include navbar_border();
+        }
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        margin: auto;
+
+        &::after {
+            @include navbar_border();
+        }
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+
+        &-item:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        &-link {
+            @include hover();
+            text-decoration: none;
+            color: var(--font-color-main);
+
+            &-active {
+                color: #fff;
+                text-decoration: underline;
+                text-underline-offset: 7px;
+                text-decoration-thickness: 2px;
+                text-decoration-color: var(--active);
+                -moz-text-decoration-color: var(--active);
+            }
+        }
+    }
+
+    &__status {
+        display: flex;
+        list-style: none;
+        margin: auto;
+        align-items: center;
+
+        &::after {
+            @include navbar_border();
+        }
+
+        &-refresh {
+            @include hover();
+            padding-right: 10px;
+        }
+
+        &-text {
+            &::before {
+                content: "\25CF";
+                color: var(--green-300);
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &__menu {
+        @include hover();
+        margin-right: 20px;
+    }
+}

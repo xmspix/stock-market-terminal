@@ -1,0 +1,60 @@
+@mixin navbar_border {
+    content: "";
+    border: 1px solid var(--bg-color-main);
+    margin-left: 40px;
+    height: 50px;
+}
+
+@mixin hover {
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+@mixin search($background) {
+    .search {
+        @include hover();
+        display: flex;
+        align-items: center;
+        margin: auto;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        -webkit-border-radius: 5px;
+
+        &__icon {
+            margin: 7px;
+            position: absolute;
+        }
+        &__input {
+            padding-left: 30px;
+            height: 30px;
+            background: $background;
+            border: 0;
+            color: #fff;
+        }
+    }
+}
+
+@mixin select($background) {
+    background: $background;
+    appearance: none;
+    color: var(--font-color-main);
+    // color: #fff;
+    border: 0;
+    padding: 7px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
