@@ -1,14 +1,29 @@
-var chart = LightweightCharts.createChart(document.body, {
+const element = document.querySelector('.chart__chart');
+
+const chart = LightweightCharts.createChart(element, {
     width: 600,
     height: 300,
+    layout: {
+        backgroundColor: "#27292c",
+        lineColor: '#414244',
+        textColor: '#414244',
+    },
+    grid: {
+        vertLines: {
+            color: '#414244',
+        },
+        horzLines: {
+            color: '#414244',
+        },
+    },
     crosshair: {
         mode: LightweightCharts.CrosshairMode.Normal,
     },
 });
 
-var candleSeries = chart.addCandlestickSeries();
+let candleSeries = chart.addCandlestickSeries();
 
-var data = [
+const data = [
     { time: '2018-10-19', open: 54.62, high: 55.50, low: 54.52, close: 54.90 },
     { time: '2018-10-22', open: 55.08, high: 55.27, low: 54.61, close: 54.98 },
     { time: '2018-10-23', open: 56.09, high: 57.47, low: 56.09, close: 57.21 },
@@ -163,16 +178,16 @@ var data = [
 
 candleSeries.setData(data);
 
-var lastClose = data[data.length - 1].close;
-var lastIndex = data.length - 1;
+let lastClose = data[data.length - 1].close;
+let lastIndex = data.length - 1;
 
-var targetIndex = lastIndex + 105 + Math.round(Math.random() + 30);
-var targetPrice = getRandomPrice();
+let targetIndex = lastIndex + 105 + Math.round(Math.random() + 30);
+let targetPrice = getRandomPrice();
 
-var currentIndex = lastIndex + 1;
-var currentBusinessDay = { day: 29, month: 5, year: 2019 };
-var ticksInCurrentBar = 0;
-var currentBar = {
+let currentIndex = lastIndex + 1;
+let currentBusinessDay = { day: 29, month: 5, year: 2019 };
+let ticksInCurrentBar = 0;
+let currentBar = {
     open: null,
     high: null,
     low: null,
@@ -212,7 +227,7 @@ function getRandomPrice() {
 }
 
 function nextBusinessDay(time) {
-    var d = new Date();
+    const d = new Date();
     d.setUTCFullYear(time.year);
     d.setUTCMonth(time.month - 1);
     d.setUTCDate(time.day + 1);
@@ -225,12 +240,12 @@ function nextBusinessDay(time) {
 }
 
 setInterval(function () {
-    var deltaY = targetPrice - lastClose;
-    var deltaX = targetIndex - lastIndex;
-    var angle = deltaY / deltaX;
-    var basePrice = lastClose + (currentIndex - lastIndex) * angle;
-    var noise = (0.1 - Math.random() * 0.2) + 1.0;
-    var noisedPrice = basePrice * noise;
+    const deltaY = targetPrice - lastClose;
+    const deltaX = targetIndex - lastIndex;
+    const angle = deltaY / deltaX;
+    const basePrice = lastClose + (currentIndex - lastIndex) * angle;
+    const noise = (0.1 - Math.random() * 0.2) + 1.0;
+    const noisedPrice = basePrice * noise;
     mergeTickToBar(noisedPrice);
     if (++ticksInCurrentBar === 5) {
         // move to next bar

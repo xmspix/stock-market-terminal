@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Market Terminal</title>
     <link rel="stylesheet" type="text/css" href="./styles/css/style.css">
+    <script src="./scripts/lightweight-charts.js" defer></script>
+    <script src="./scripts/chart.js" defer></script>
 </head>
 
 <body class="app">
@@ -112,7 +114,11 @@
                             <td class="table__data">$167</td>
                             <td class="table__data">12,300,123</td>
                             <td class="table__data">0.98</td>
-                            <td class="table__data"></td>
+                            <td class="table__data">
+                                <svg class="icon" style="fill:lime;">
+                                    <use xlink:href="./images/sprite.svg#line"></use>
+                                </svg>
+                            </td>
                         </tr>
                         <tr class="table__row">
                             <td class="table__data"><i class="far fa-star"></i></td>
@@ -120,13 +126,59 @@
                             <td class="table__data">$167</td>
                             <td class="table__data">12,300,123</td>
                             <td class="table__data">0.98</td>
-                            <td class="table__data"></td>
+                            <td class="table__data">
+                                <svg class="icon" style="fill:lime;">
+                                    <use xlink:href="./images/sprite.svg#line"></use>
+                                </svg>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
-        <section class="widget"></section>
+
+        <section class="widget chart">
+            <div class="widget__bar">
+                <div class="widget__tab">
+                    <p>Chart</p>
+                    <i class="widget__tab-close fas fa-times"></i>
+                </div>
+                <div class="widget__buttons">
+                    <i class="widget__buttons-maximize far fa-window-maximize"></i>
+                    <i class="widget__buttons-close fas fa-times"></i>
+                </div>
+            </div>
+            <div class="widget__body">
+                <div class="widget__toolbar">
+                    <input class="input input__dark" type="text" value="BTCUSD">
+                    <div class="chart__timeframe">
+                        <button class="btn btn__timeframe">1m</button>
+                        <button class="btn btn__timeframe">30m</button>
+                        <button class="btn btn__timeframe">1h</button>
+                        <button class="btn btn__timeframe">D</button>
+                    </div>
+                    <div class="chart__charts">
+                        <svg class="icon icon__stroke btn">
+                            <use xlink:href="./images/sprite.svg#bars"></use>
+                        </svg>
+                        <svg class="icon icon__fill btn">
+                            <use xlink:href="./images/sprite.svg#candles"></use>
+                        </svg>
+                        <svg class="icon icon__fill btn">
+                            <use xlink:href="./images/sprite.svg#area"></use>
+                        </svg>
+                        <svg class="icon icon__stroke btn">
+                            <use xlink:href="./images/sprite.svg#line"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="chart__chart">
+
+                </div>
+
+
+            </div>
+        </section>
         <section class="widget"></section>
         <section class="widget"></section>
         <section class="widget"></section>

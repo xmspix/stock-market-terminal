@@ -1,7 +1,14 @@
-@mixin navbar_border {
+@mixin navbar_border_left($margin: 40px) {
     content: "";
     border: 1px solid var(--bg-color-main);
-    margin-left: 40px;
+    margin-left: $margin;
+    height: 50px;
+}
+
+@mixin navbar_border_right($margin: 40px) {
+    content: "";
+    border: 1px solid var(--bg-color-main);
+    margin-right: $margin;
     height: 50px;
 }
 
@@ -50,14 +57,8 @@
     background: $background;
     appearance: none;
     color: var(--font-color-main);
-    // color: #fff;
     border: 0;
     padding: 7px;
-    // border-radius: 5px;
-    // -webkit-border-radius: 5px;
-    // -moz-border-radius: 5px;
-    // -ms-border-radius: 5px;
-    // -o-border-radius: 5px;
 }
 
 @mixin radius-left-side {

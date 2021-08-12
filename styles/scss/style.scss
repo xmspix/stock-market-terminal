@@ -1,11 +1,11 @@
 @import "./reset";
 @import url("../../vendors/fonts.css");
 @import url("../../vendors/all.min.css");
-// @import url("./variables/variables.css");
-// @import "./mixins/mixin";
 @import "./variables";
 @import "./mixin";
+@import "./input.scss";
 @import "./app";
+@import "./logo";
 @import "./btn";
 @import "./search";
 @import "./select";
@@ -14,10 +14,5 @@
 @import "./widget";
 @import "./alert";
 @import "./table";
-
-.logo {
-    &__header {
-        width: 26px;
-        height: 26px;
-    }
-}
+@import "./icon";
+@import "./chart";

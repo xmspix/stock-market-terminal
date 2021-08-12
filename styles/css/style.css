@@ -23,9 +23,25 @@ html {
   --green-300: #79e7a0;
 }
 
+.input {
+  padding-left: 10px;
+  border-radius: 5px;
+  height: 30px;
+  border: 0;
+  color: #fff;
+}
+.input__dark {
+  background: var(--bg-color-dark);
+}
+
 .app {
   background: var(--bg-color-main);
   font-family: "Roboto", sans-serif;
+}
+
+.logo__header {
+  width: 26px;
+  height: 26px;
 }
 
 .btn {
@@ -35,13 +51,13 @@ html {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-  color: #fff;
   cursor: pointer;
 }
 .btn:hover {
   color: #fff;
 }
 .btn__menu {
+  color: var(--font-color-main);
   margin-left: 14px;
   padding: 10px;
   background: var(--bg-color-secondary);
@@ -86,6 +102,14 @@ html {
   border-bottom-right-radius: 5px;
   margin-left: 2px;
 }
+.btn__timeframe {
+  border: 0;
+  background: none;
+  color: var(--font-color-main);
+}
+.btn__timeframe:not(:last-child) {
+  margin-right: 2px;
+}
 
 .search__input {
   border-radius: 5px;
@@ -102,7 +126,6 @@ html {
   display: flex;
   background: var(--bg-color-secondary);
   justify-content: space-around;
-  height: 50px;
   align-items: center;
   color: var(--font-color-main);
 }
@@ -116,6 +139,10 @@ html {
   border: 1px solid var(--bg-color-main);
   margin-left: 40px;
   height: 50px;
+}
+.header__search {
+  display: flex;
+  align-items: center;
 }
 .header__search .search {
   cursor: pointer;
@@ -245,7 +272,7 @@ html {
 
 .widget {
   font-size: 1.5em;
-  height: 300px;
+  height: 389px;
   margin: 2px;
   background: var(--bg-color-secondary);
   border-top-right-radius: 5px;
@@ -347,8 +374,10 @@ html {
 .widget__toolbar {
   margin: 10px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+.widget__toolbar > *:not(:last-child) {
+  margin-right: 5px;
 }
 .widget__select {
   background: var(--bg-color-dark);
@@ -433,9 +462,31 @@ html {
   border-bottom: 1px solid #3d3e40;
 }
 
-.logo__header {
-  width: 26px;
-  height: 26px;
+.icon {
+  width: 28px;
+  height: 28px;
+}
+.icon__stroke {
+  stroke: #fff;
+}
+.icon__fill {
+  fill: #fff;
+}
+
+.chart__timeframe {
+  margin: 0 10px;
+}
+.chart__timeframe::before {
+  content: "";
+  border: 1px solid var(--bg-color-main);
+  margin-right: 10px;
+  height: 50px;
+}
+.chart__timeframe::after {
+  content: "";
+  border: 1px solid var(--bg-color-main);
+  margin-left: 10px;
+  height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

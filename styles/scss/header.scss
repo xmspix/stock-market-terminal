@@ -4,7 +4,6 @@
     display: flex;
     background: var(--bg-color-secondary);
     justify-content: space-around;
-    height: 50px;
     align-items: center;
     color: var(--font-color-main);
 
@@ -14,15 +13,17 @@
         margin: auto;
 
         &::after {
-            @include navbar_border();
+            @include navbar_border_left();
         }
     }
 
     &__search {
         @include search(var(--bg-color-secondary));
+        display: flex;
+        align-items: center;
 
         &::after {
-            @include navbar_border();
+            @include navbar_border_left();
         }
     }
 
@@ -32,7 +33,7 @@
         margin: auto;
 
         &::after {
-            @include navbar_border();
+            @include navbar_border_left();
         }
     }
 
@@ -67,7 +68,7 @@
         align-items: center;
 
         &::after {
-            @include navbar_border();
+            @include navbar_border_left();
         }
 
         &-refresh {

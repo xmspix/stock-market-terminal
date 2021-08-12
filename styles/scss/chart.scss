@@ -1,0 +1,12 @@
+.chart {
+    &__timeframe {
+        margin: 0 10px;
+
+        &::before {
+            @include navbar_border_right(10px);
+        }
+        &::after {
+            @include navbar_border_left(10px);
+        }
+    }
+}

@@ -1,10 +1,9 @@
 .btn {
     @include hover;
-
-    color: #fff;
     cursor: pointer;
 
     &__menu {
+        color: var(--font-color-main);
         margin-left: 14px;
         padding: 10px;
         background: var(--bg-color-secondary);
@@ -28,11 +27,6 @@
         align-self: center;
         color: var(--font-color-main);
         background: #27292c;
-        // border-radius: 5px;
-        // -webkit-border-radius: 5px;
-        // -moz-border-radius: 5px;
-        // -ms-border-radius: 5px;
-        // -o-border-radius: 5px;
     }
 
     &__select-round {
@@ -56,5 +50,15 @@
     &__select-right {
         @include radius-right-side;
         margin-left: 2px;
+    }
+
+    &__timeframe {
+        border: 0;
+        background: none;
+        color: var(--font-color-main);
+
+        &:not(:last-child) {
+            margin-right: 2px;
+        }
     }
 }
