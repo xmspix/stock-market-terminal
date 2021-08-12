@@ -21,9 +21,10 @@
 @mixin search($background) {
     .search {
         @include hover();
+        margin: auto;
         display: flex;
         align-items: center;
-        margin: auto;
+        color: var(--font-color-main);
         border-radius: 5px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
@@ -52,9 +53,18 @@
     // color: #fff;
     border: 0;
     padding: 7px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    // border-radius: 5px;
+    // -webkit-border-radius: 5px;
+    // -moz-border-radius: 5px;
+    // -ms-border-radius: 5px;
+    // -o-border-radius: 5px;
+}
+
+@mixin radius-left-side {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+@mixin radius-right-side {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }

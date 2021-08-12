@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Market Terminal</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/css/style.css">
 </head>
 
 <body class="app">
@@ -41,7 +41,7 @@
     </header>
 
     <main class="main">
-        <section class="widget">
+        <section class="widget screener">
             <div class="widget__bar">
                 <div class="widget__tab">
                     <p>Market Screener</p>
@@ -55,12 +55,10 @@
             <div class="widget__body">
                 <div class="widget__toolbar">
                     <i class="favorite favorite__icon btn fas fa-star"></i>
-                    <!-- <i class="far fa-star"></i> -->
                     <div class="widget__search">
                         <i class="search search__icon fa fa-search"></i>
                         <input class="search__input" type="text" placeholder="Search">
                     </div>
-
                     <div class="select select__container">
                         <select class="widget__select widget__select--wide" name="" id="">
                             <option value="">1D</option>
@@ -70,7 +68,6 @@
                         </select>
                         <i class="btn btn__select btn__select-round fas fa-chevron-down"></i>
                     </div>
-
                     <div class="select select__container">
                         <i class="btn btn__select btn__select-left fas fa-chevron-left"></i>
                         <select class="widget__select" name="" id="">
@@ -81,7 +78,6 @@
                         </select>
                         <i class="btn btn__select btn__select-right fas fa-chevron-right"></i>
                     </div>
-
                     <div class="select select__container">
                         <i class="btn btn__select btn__select-left fas fa-chevron-left"></i>
                         <select class="widget__select" name="" id="">
@@ -92,12 +88,16 @@
                         </select>
                         <i class="btn btn__select btn__select-right fas fa-chevron-right"></i>
                     </div>
-
-
+                    <div class="alert">
+                        <i class="btn alert__bell far fa-bell"></i>
+                        <i class="btn alert__menu fas fa-ellipsis-v"></i>
+                    </div>
                 </div>
+
                 <table class="table table__watchlist">
                     <thead class="table__labels">
                         <tr class="table__row">
+                            <th class="table__header"><i class="fas fa-filter"></i></td>
                             <th class="table__header">Symbol</td>
                             <th class="table__header">Price</td>
                             <th class="table__header">Market Cap</td>
@@ -107,6 +107,7 @@
                     </thead>
                     <tbody class="table__body">
                         <tr class="table__row">
+                            <td class="table__data"><i class="fas fa-star"></i></td>
                             <td class="table__data">AAPL</td>
                             <td class="table__data">$167</td>
                             <td class="table__data">12,300,123</td>
@@ -114,6 +115,7 @@
                             <td class="table__data"></td>
                         </tr>
                         <tr class="table__row">
+                            <td class="table__data"><i class="far fa-star"></i></td>
                             <td class="table__data">GBTC</td>
                             <td class="table__data">$167</td>
                             <td class="table__data">12,300,123</td>

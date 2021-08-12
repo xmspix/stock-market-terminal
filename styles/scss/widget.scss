@@ -1,5 +1,5 @@
-@import "../../mixins/mixin";
 .widget {
+    font-size: 1.5em;
     height: 300px;
     margin: 2px;
     background: var(--bg-color-secondary);
@@ -66,14 +66,11 @@
         position: relative;
 
         &--wide {
+            @include radius-left-side;
+            @include radius-right-side;
             width: 60px;
         }
     }
-}
-
-.search__icon {
-    @include hover();
-    color: var(--bg-color-main);
 }
 
 .favorite__icon {
