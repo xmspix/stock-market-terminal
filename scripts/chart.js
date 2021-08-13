@@ -2,7 +2,7 @@ const element = document.querySelector('.chart__chart');
 
 const chart = LightweightCharts.createChart(element, {
     width: 600,
-    height: 300,
+    height: 246,
     layout: {
         backgroundColor: "#27292c",
         lineColor: '#414244',

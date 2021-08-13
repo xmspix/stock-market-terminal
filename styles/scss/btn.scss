@@ -1,6 +1,18 @@
 .btn {
     @include hover;
     cursor: pointer;
+    border: 0;
+
+    &__dark {
+        padding: 7px;
+        color: var(--font-color-main);
+        background: var(--bg-color-dark);
+    }
+
+    &__round-corners {
+        @include radius-left-side;
+        @include radius-right-side;
+    }
 
     &__menu {
         color: var(--font-color-main);
