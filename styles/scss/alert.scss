@@ -1,23 +1,23 @@
 @mixin alert {
-    padding: 6px;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    color: var(--font-color-main);
-    background: #27292c;
+  // padding: 6px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  // color: var(--font-color-main);
+  //   background: #27292c;
 }
 
 .alert {
-    position: relative;
+  position: relative;
 
-    &__bell {
-        @include alert;
-        @include radius-left-side;
-    }
+  &__bell {
+    @include alert;
+    @include radius-left-side;
+  }
 
-    &__menu {
-        @include alert;
-        @include radius-right-side;
-        margin-left: -2px;
-    }
+  &__menu {
+    @include alert;
+    @include radius-right-side;
+    margin-left: -2px;
+  }
 }

@@ -90,8 +90,8 @@
                     <i class="btn btn__select btn__select-right fas fa-chevron-right"></i>
                 </div>
                 <div class="alert">
-                    <i class="btn alert__bell far fa-bell"></i>
-                    <i class="btn alert__menu fas fa-ellipsis-v"></i>
+                    <i class="btn btn__light alert__bell far fa-bell"></i>
+                    <i class="btn btn__light alert__menu fas fa-ellipsis-v"></i>
                 </div>
             </div>
             <div class="widget__body">
@@ -226,7 +226,7 @@
                 <div class="items">
                     <div class="items__left">
                         <p>Lists:</p>
-                        <i class="btn btn__dark btn__round-corners btn__list fas fa-list"></i>
+                        <i class="btn btn__light btn__round-corners btn__list fas fa-list"></i>
 
                         <div class="select select__container">
                             <i class="btn btn__select btn__select-left fas fa-chevron-left"></i>
@@ -240,11 +240,11 @@
                         </div>
                     </div>
                     <div class="items__right">
-                        <button class="btn btn__dark btn__round-corners btn__add-symbol">Add Symbol</button>
+                        <button class="btn btn__light btn__round-corners btn__add-symbol">Add Symbol</button>
 
                         <div class="alert">
-                            <i class="btn alert__bell far fa-bell"></i>
-                            <i class="btn alert__menu fas fa-ellipsis-v"></i>
+                            <i class="btn btn__light alert__bell far fa-bell"></i>
+                            <i class="btn btn__light alert__menu fas fa-ellipsis-v"></i>
                         </div>
                     </div>
                 </div>
@@ -351,7 +351,103 @@
             </div>
         </section>
 
-        <section class="widget"></section>
+        <section class="widget">
+            <div class="widget__bar">
+                <div class="widget__tab">
+                    <p>Matrix</p>
+                    <i class="widget__tab-close fas fa-times"></i>
+                </div>
+                <div class="widget__buttons">
+                    <i class="widget__buttons-maximize far fa-window-maximize"></i>
+                    <i class="widget__buttons-close fas fa-times"></i>
+                </div>
+            </div>
+            <div class="widget__toolbar">
+                <div class="items">
+                    <div class="items__left">
+                        <button class="btn btn__dark btn__round-corners btn__multiplier">Multiplier</button>
+                        <button class="btn btn__light btn__round-corners btn__correlation">Correlation</button>
+                    </div>
+                    <div class="items__right">
+                        <div class="select select__container icon__daily">
+                            <select class="widget__select widget__select--wide" name="" id="">
+                                <option value="">Daily</option>
+                            </select>
+                            <i class="btn btn__select btn__select-round fas fa-chevron-down"></i>
+                        </div>
+                        <div class="select select__container icon__calendar">
+                            <select class="widget__select widget__select--wide" name="" id="">
+                                <option value="">3 Month</option>
+                            </select>
+                            <i class="btn btn__select btn__select-round fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="widget__body">
+                <table class="table table__matrix">
+                    <thead class="table__labels">
+                        <tr class="table__row">
+                            <th class="table__header table__matrix--header">BTC</th>
+                            <th class="table__header table__matrix--header">NEO</th>
+                            <th class="table__header table__matrix--header">XEM</th>
+                            <th class="table__header table__matrix--header">ETH</th>
+                            <th class="table__header table__matrix--header">DASH</th>
+                            <th class="table__header table__matrix--header">LTC</th>
+                            <th class="table__header table__matrix--header">USDT</th>
+                            <th class="table__header table__matrix--header">BCH</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table__body">
+                        <tr class="table__row">
+                            <td class="table__data">BTC</td>
+                            <td class="table__data" style="background: #242425;">1</td>
+                            <td class="table__data" style="background: #008871;">0.57</td>
+                            <td class="table__data" style="background: #006F5F;">0.43</td>
+                            <td class="table__data" style="background: #006C5D;">0.41</td>
+                            <td class="table__data" style="background: #006D5E;">0.42</td>
+                            <td class="table__data" style="background: #5B2B33;">0.28</td>
+                            <td class="table__data" style="background: #242425;">-0.00</td>
+                            <td class="table__data" style="background: #009379;">0.64</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__data">NEO</td>
+                            <td class="table__data" style="background: #006859;">0.39</td>
+                            <td class="table__data" style="background: #242425;">1</td>
+                            <td class="table__data" style="background: #115D52;">0.34</td>
+                            <td class="table__data" style="background: #007967;">0.49</td>
+                            <td class="table__data" style="background: #692A36;">0.36</td>
+                            <td class="table__data" style="background: #00826C;">0.54</td>
+                            <td class="table__data" style="background: #242425;">0.01</td>
+                            <td class="table__data" style="background: #00826C;">0.53</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__data">XEM</td>
+                            <td class="table__data" style="background: #008D75;">0.60</td>
+                            <td class="table__data" style="background: #009B7F;">0.68</td>
+                            <td class="table__data" style="background: #242425;">1</td>
+                            <td class="table__data" style="background: #8A283B;">0.53</td>
+                            <td class="table__data" style="background: #00826C;">0.53</td>
+                            <td class="table__data" style="background: #00826C;">0.54</td>
+                            <td class="table__data" style="background: #242425;">-0.01</td>
+                            <td class="table__data" style="background: #00B896;">0.85</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__data">ETH</td>
+                            <td class="table__data" style="background: #00826C;">0.54</td>
+                            <td class="table__data" style="background: #00CBA2;">0.95</td>
+                            <td class="table__data" style="background: #007C69;">0.51</td>
+                            <td class="table__data" style="background: #242425;">1</td>
+                            <td class="table__data" style="background: #006F5F;">0.44</td>
+                            <td class="table__data" style="background: #00C79F;">0.94</td>
+                            <td class="table__data" style="background: #242425;">0.02</td>
+                            <td class="table__data" style="background: #009C7F;">0.69</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
         <section class="widget"></section>
         <section class="widget"></section>
     </main>

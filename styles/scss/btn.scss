@@ -3,6 +3,12 @@
   cursor: pointer;
   border: 0;
 
+  &__light {
+    padding: 7px;
+    color: #ccc;
+    background: var(--color-gray-light);
+  }
+
   &__dark {
     padding: 7px;
     color: var(--font-color-main);
@@ -43,7 +49,7 @@
 
   &__select-round {
     position: absolute;
-    left: 40px;
+    right: 5px;
     background: var(--bg-color-main);
     padding: 4px;
     font-size: 10px;
@@ -84,6 +90,23 @@
     &::before {
       content: "+";
       margin-right: 10px;
+    }
+  }
+
+  &__multiplier {
+    margin-right: 5px;
+
+    &::before {
+      @include font-awesome("\f0ce");
+      margin-right: 5px;
+    }
+  }
+
+  &__correlation {
+    margin-right: 5px;
+    &::before {
+      @include font-awesome("\f542");
+      margin-right: 5px;
     }
   }
 }
