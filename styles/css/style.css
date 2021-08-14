@@ -35,18 +35,15 @@ html {
 }
 
 .items {
-  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 .items__left {
-  width: 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .items__right {
-  width: 140px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -112,7 +109,7 @@ html {
 }
 .btn__select-round {
   position: absolute;
-  right: 5px;
+  left: 40px;
   background: var(--bg-color-main);
   padding: 4px;
   font-size: 10px;
@@ -139,6 +136,16 @@ html {
 }
 .btn__timeframe:not(:last-child) {
   margin-right: 2px;
+}
+.btn__list {
+  margin: 0 5px;
+}
+.btn__add-symbol {
+  margin-right: 5px;
+}
+.btn__add-symbol::before {
+  content: "+";
+  margin-right: 10px;
 }
 
 .search__input {
@@ -473,9 +480,11 @@ html {
   margin-top: 15px;
   font-size: 0.9em;
   color: var(--font-color-gray);
+  width: 100%;
 }
 .table__labels {
   padding-bottom: 1em;
+  width: 100%;
 }
 .table__header {
   font-weight: normal;
@@ -483,6 +492,11 @@ html {
 }
 .table__header:not(:last-child) {
   border-right: 1px solid #3d3e40;
+}
+.table__body {
+  display: block;
+  max-height: 200px;
+  overflow-y: scroll;
 }
 .table__body::before {
   content: "";
@@ -492,6 +506,11 @@ html {
 .table__data {
   text-align: center;
   padding: 0.4em;
+}
+.table__row {
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
 }
 .table__row:not(:last-child) {
   border-bottom: 1px solid #3d3e40;

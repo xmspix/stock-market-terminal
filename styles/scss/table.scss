@@ -1,38 +1,48 @@
 .table {
-    border-collapse: collapse;
-    margin-top: 15px;
-    font-size: 0.9em;
-    color: var(--font-color-gray);
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: var(--font-color-gray);
+  width: 100%;
 
-    &__labels {
-        padding-bottom: 1em;
+  &__labels {
+    padding-bottom: 1em;
+    width: 100%;
+  }
+
+  &__header {
+    font-weight: normal;
+    padding-inline: 1em;
+
+    &:not(:last-child) {
+      border-right: 1px solid #3d3e40;
     }
+  }
 
-    &__header {
-        font-weight: normal;
-        padding-inline: 1em;
+  &__body {
+    display: block;
+    max-height: 200px;
+    overflow-y: scroll;
 
-        &:not(:last-child) {
-            border-right: 1px solid #3d3e40;
-        }
+    &::before {
+      content: "";
+      display: block;
+      height: 15px;
     }
+  }
 
-    &__body {
-        &::before {
-            content: "";
-            display: block;
-            height: 15px;
-        }
-    }
+  &__data {
+    text-align: center;
+    padding: 0.4em;
+  }
 
-    &__data {
-        text-align: center;
-        padding: 0.4em;
-    }
+  &__row {
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
 
-    &__row {
-        &:not(:last-child) {
-            border-bottom: 1px solid #3d3e40;
-        }
+    &:not(:last-child) {
+      border-bottom: 1px solid #3d3e40;
     }
+  }
 }
