@@ -1,19 +1,16 @@
 .items {
-  // width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
 
   &__left {
-    // width: 200px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
 
   &__right {
-    // width: 140px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
 }

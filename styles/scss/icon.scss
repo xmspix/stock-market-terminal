@@ -12,19 +12,50 @@
   &__daily {
     &::before {
       @include font-awesome("\f5b7");
-      left: 5px;
       z-index: 1;
       position: relative;
       left: 20px;
     }
   }
+
   &__calendar {
     &::before {
       @include font-awesome("\f133");
-      left: 5px;
       z-index: 1;
       position: relative;
       left: 20px;
+    }
+  }
+
+  &__crypto {
+    &::before {
+      @include font-awesome-brands("\f379");
+      z-index: 1;
+      position: relative;
+      left: 20px;
+    }
+  }
+
+  &__filter {
+    &::before {
+      @include font-awesome("\f0b0");
+      margin-right: 5px;
+    }
+  }
+
+  &__chart {
+    &::before {
+      @include font-awesome("\f201");
+      z-index: 1;
+      position: relative;
+      margin-right: 5px;
+    }
+  }
+
+  &__add {
+    &::before {
+      content: "+";
+      margin-right: 5px;
     }
   }
 }
