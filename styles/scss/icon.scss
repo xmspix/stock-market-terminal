@@ -58,4 +58,29 @@
       margin-right: 5px;
     }
   }
+
+  &__exchanges {
+    &::before {
+      @include font-awesome("\f277");
+      z-index: 1;
+      position: relative;
+      margin-right: 5px;
+    }
+  }
+  &__window {
+    &::before {
+      @include font-awesome("\f2d2");
+      z-index: 1;
+      position: relative;
+      margin-right: 5px;
+    }
+  }
+  &__wallet {
+    &::before {
+      @include font-awesome("\f555");
+      z-index: 1;
+      position: relative;
+      margin-right: 5px;
+    }
+  }
 }

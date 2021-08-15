@@ -20,7 +20,7 @@ html {
   color: #fff;
 }
 .input__dark {
-  background: #27292c;
+  background: #242526;
 }
 
 .switch {
@@ -95,6 +95,9 @@ html {
   display: flex;
   align-items: center;
 }
+.items__left > *:not(:last-child) {
+  margin-right: 5px;
+}
 .items__right {
   display: flex;
   align-items: center;
@@ -131,7 +134,7 @@ html {
 .btn__dark {
   padding: 7px;
   color: #414244;
-  background: #27292c;
+  background: #242526;
 }
 .btn__round-corners {
   border-top-left-radius: 5px;
@@ -161,7 +164,7 @@ html {
   padding: 7px;
   align-self: center;
   color: #414244;
-  background: #27292c;
+  background: #242526;
 }
 .btn__select-round {
   position: absolute;
@@ -413,7 +416,7 @@ html {
   justify-content: space-between;
   padding: 10px 10px 0 0;
   position: relative;
-  background: #27292c;
+  background: #242526;
   border-top-right-radius: 5px;
 }
 .widget__tab {
@@ -498,7 +501,7 @@ html {
 .widget__search .search__input {
   padding-left: 30px;
   height: 30px;
-  background: #27292c;
+  background: #242526;
   border: 0;
   color: #fff;
 }
@@ -513,7 +516,7 @@ html {
   margin-right: 5px;
 }
 .widget__select {
-  background: #27292c;
+  background: #242526;
   appearance: none;
   color: #eee;
   border: 0;
@@ -617,7 +620,7 @@ html {
   color: #888;
 }
 .table__dark--bg {
-  background: #27292c;
+  background: #242526;
   width: 2px;
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -716,6 +719,51 @@ html {
   content: "+";
   margin-right: 5px;
 }
+.icon__exchanges::before {
+  align-self: center;
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  z-index: 1;
+  position: relative;
+  margin-right: 5px;
+}
+.icon__window::before {
+  align-self: center;
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  z-index: 1;
+  position: relative;
+  margin-right: 5px;
+}
+.icon__wallet::before {
+  align-self: center;
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  z-index: 1;
+  position: relative;
+  margin-right: 5px;
+}
 
 .chart__timeframe {
   margin: 0 10px;
@@ -731,6 +779,24 @@ html {
   border: 1px solid #313234;
   margin-left: 10px;
   height: 50px;
+}
+.chart__container {
+  position: relative;
+  max-width: 200px;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #6a6a6c;
+  padding: 10px;
+}
+.chart__container--dark {
+  background: #27292c;
+}
+.chart__container--subtitle {
+  margin: 3px 0;
+  font-size: 0.9em;
 }
 
 /*# sourceMappingURL=style.css.map */

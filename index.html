@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="./styles/css/style.css" />
     <script src="./vendors/lightweight-charts.js" defer></script>
     <script src="./scripts/chart.js" defer></script>
+    <script src="./vendors/chart.js" defer></script>
+    <script src="./scripts/chartjs.js" defer></script>
 </head>
 
 <body class="app">
@@ -522,7 +524,115 @@
             </div>
         </section>
 
-        <section class="widget"></section>
+        <section class="widget">
+            <div class="widget__bar">
+                <div class="widget__tab">
+                    <p class="widget__tab--title">Wallets</p>
+                    <i class="widget__tab-close fas fa-times"></i>
+                </div>
+                <div class="widget__buttons">
+                    <i class="widget__buttons-maximize far fa-window-maximize"></i>
+                    <i class="widget__buttons-close fas fa-times"></i>
+                </div>
+            </div>
+            <div class="widget__toolbar">
+                <div class="items">
+                    <div class="items__left">
+                        <button class="btn btn__light btn__round-corners icon__chart">Hide</button>
+                        <button class="btn btn__light btn__round-corners icon__exchanges">Exchanges</button>
+                        <button class="btn btn__light btn__round-corners icon__window">Pools</button>
+                        <button class="btn btn__light btn__round-corners icon__wallet">Whale Wallets</button>
+                    </div>
+                    <div class="items__right">
+                        <div class="alert">
+                            <i class="btn btn__light alert__bell far fa-bell"></i>
+                            <i class="btn btn__light alert__menu fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="select select__container">
+                    <i class="btn btn__select btn__select-left fas fa-chevron-left"></i>
+                    <span class="widget__select icon__filter">All Brokers</span>
+                    <i class="btn btn__select btn__select-right fas fa-chevron-right"></i>
+                </div>
+
+                <div class="select select__container icon__crypto">
+                    <span class="widget__select widget__select--wide">Crypto</span>
+                    <i class="btn btn__select btn__select-round fas fa-chevron-down"></i>
+                </div>
+
+                <div class="widget__switch">
+                    <span class="widget__switch--title">AGGREGATED</span>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                <input type="checkbox" />
+                <span class="switch__slider switch__slider--round"></span>
+                </label>
+            </div> -->
+            </div>
+            <div class="widget__body">
+                <div class="items">
+                    <!-- <div class="items__left"> -->
+                    <div class="chart chart__container chart__container--dark">
+                        <canvas id="myChart"></canvas>
+                        <p class="chart__container--subtitle">exchanges dominance</p>
+                        <div class="select select__container">
+                            <select class="widget__select widget__select--wide" name="" id="">
+                                <option value="">Balance BTC</option>
+                            </select>
+                            <i class="btn btn__select btn__select-round fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                    <!-- <div class="items__right"> -->
+                    <table class="table">
+                        <thead class="table__labels">
+                            <tr class="table__row">
+                                <th class="table__header"><i class="fas fa-filter"></i>Name</th>
+                                <th class="table__header">Balance<br>BTC</th>
+                                <th class="table__header">Balance<br>USD</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table__body">
+                            <tr class="table__row">
+                                <td class="table__data">Bitfinex.com</td>
+                                <td class="table__data">138,389.16</td>
+                                <td class="table__data">1,476,863,728.58</td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__data">Bitfinex.com</td>
+                                <td class="table__data">123,254.79</td>
+                                <td class="table__data">1,317,384,216.81</td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__data">Bitfinex.com</td>
+                                <td class="table__data">123,254.79</td>
+                                <td class="table__data">1,317,384,216.81</td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__data">Bitfinex.com</td>
+                                <td class="table__data">123,254.79</td>
+                                <td class="table__data">1,317,384,216.81</td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__data">Bitfinex.com</td>
+                                <td class="table__data">123,254.79</td>
+                                <td class="table__data">1,317,384,216.81</td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__data">Bitfinex.com</td>
+                                <td class="table__data">123,254.79</td>
+                                <td class="table__data">1,317,384,216.81</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- </div> -->
+                </div>
+            </div>
+
+
+        </section>
     </main>
 </body>
 
