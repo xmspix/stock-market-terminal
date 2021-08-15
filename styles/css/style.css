@@ -77,8 +77,8 @@ html {
 .notification {
   background: #6a6a6c;
   border-radius: 50%;
-  width: 2.5em;
-  line-height: 2.5em;
+  width: 1.3em;
+  line-height: 1.3em;
   text-align: center;
   font-size: 0.8em;
   display: inline-block;
@@ -238,6 +238,7 @@ html {
 
 .search__input {
   border-radius: 5px;
+  width: 130px;
 }
 
 .select {
@@ -406,7 +407,6 @@ html {
   margin: 2px;
   background: #2b2c2e;
   border-top-right-radius: 5px;
-  overflow: hidden;
 }
 .widget__bar {
   display: flex;
@@ -578,7 +578,7 @@ html {
   border-collapse: collapse;
   margin-top: 15px;
   font-size: 0.9em;
-  color: #eee;
+  color: #888;
   width: 100%;
 }
 .table__labels {
@@ -615,6 +615,18 @@ html {
 }
 .table__footer {
   color: #888;
+}
+.table__dark--bg {
+  background: #27292c;
+  width: 2px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.table__dark--color {
+  color: #414244;
 }
 
 .icon {

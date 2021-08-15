@@ -1,101 +1,99 @@
 .widget {
-  font-size: 1.5em;
-  // height: 389px;
-  height: 335px;
-  margin: 2px;
-  background: $bg-color-secondary;
-  border-top-right-radius: 5px;
-  overflow: hidden;
-
-  &__bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 10px 0 0;
-    position: relative;
-    background: $bg-color-dark;
-    border-top-right-radius: 5px;
-  }
-
-  &__tab {
-    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    height: 335px;
+    margin: 2px;
     background: $bg-color-secondary;
-    color: #fff;
-    font-size: 13px;
-    padding: 20px 20px 10px;
-    margin: -20px 0 0 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    display: flex;
-    align-items: flex-end;
+    border-top-right-radius: 5px;
 
-    &-close {
-      @include hover();
-      margin-left: 10px;
-      color: $font-color-main;
-      cursor: pointer;
-    }
-  }
-
-  &__buttons {
-    &-maximize {
-      @include hover();
-      margin-right: 10px;
-      color: $font-color-main;
-      cursor: pointer;
+    &__bar {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10px 0 0;
+        position: relative;
+        background: $bg-color-dark;
+        border-top-right-radius: 5px;
     }
 
-    &-close {
-      @include hover();
-      margin-right: 5px;
-      color: $font-color-main;
-      cursor: pointer;
+    &__tab {
+        font-family: "Roboto", sans-serif;
+        background: $bg-color-secondary;
+        color: #fff;
+        font-size: 13px;
+        padding: 20px 20px 10px;
+        margin: -20px 0 0 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        align-items: flex-end;
+
+        &-close {
+            @include hover();
+            margin-left: 10px;
+            color: $font-color-main;
+            cursor: pointer;
+        }
     }
-  }
 
-  &__search {
-    @include search($bg-color-dark);
-  }
+    &__buttons {
+        &-maximize {
+            @include hover();
+            margin-right: 10px;
+            color: $font-color-main;
+            cursor: pointer;
+        }
 
-  &__toolbar {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-    align-items: center;
-    color: $font-color-main;
-  }
-
-  &__toolbar > *:not(:last-child) {
-    margin-right: 5px;
-  }
-
-  &__select {
-    @include select($bg-color-dark);
-    position: relative;
-    font-size: 0.8em;
-
-    &--wide {
-      @include radius-left-side;
-      @include radius-right-side;
-      min-width: 100px;
-      padding: 7px 25px;
+        &-close {
+            @include hover();
+            margin-right: 5px;
+            color: $font-color-main;
+            cursor: pointer;
+        }
     }
-  }
 
-  &__body {
-    display: grid;
-  }
-
-  &__switch {
-    display: flex;
-    align-items: center;
-    &--title {
-      margin-right: 5px;
-      font-size: 0.8em;
+    &__search {
+        @include search($bg-color-dark);
     }
-  }
+
+    &__toolbar {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+        align-items: center;
+        color: $font-color-main;
+    }
+
+    &__toolbar > *:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    &__select {
+        @include select($bg-color-dark);
+        position: relative;
+        font-size: 0.8em;
+
+        &--wide {
+            @include radius-left-side;
+            @include radius-right-side;
+            min-width: 100px;
+            padding: 7px 25px;
+        }
+    }
+
+    &__body {
+        display: grid;
+    }
+
+    &__switch {
+        display: flex;
+        align-items: center;
+        &--title {
+            margin-right: 5px;
+            font-size: 0.8em;
+        }
+    }
 }
 
 .favorite__icon {
-  @include hover();
-  color: $bg-color-main;
+    @include hover();
+    color: $bg-color-main;
 }
