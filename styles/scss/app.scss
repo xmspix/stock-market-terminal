@@ -6,6 +6,7 @@
   display: grid;
   grid-template:
     "header profile"
-    "main profile";
+    "main profile"
+    "footer profile";
   grid-template-columns: auto 5em;
 }

@@ -130,7 +130,7 @@ html {
   background: #313234;
   font-family: "Roboto", sans-serif;
   display: grid;
-  grid-template: "header profile" "main profile";
+  grid-template: "header profile" "main profile" "footer profile";
   grid-template-columns: auto 5em;
 }
 
@@ -912,6 +912,106 @@ html {
   bottom: 1px;
   right: 5px;
   font-size: 2em;
+}
+
+.footer {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  grid-area: footer;
+}
+.footer__news {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: 900;
+  flex: 1;
+}
+.footer__news--text {
+  margin-left: 2em;
+  text-transform: capitalize;
+  min-width: 6em;
+}
+.footer__news--text::before {
+  content: "●";
+  color: #f53c3c;
+  margin-right: 5px;
+}
+.footer__news--marquee {
+  overflow: hidden;
+  position: relative;
+  min-width: 80%;
+}
+.footer__news--marquee:not(:last-child) {
+  margin-right: 15px;
+}
+.footer__news--marquee::before {
+  content: " ";
+}
+.footer__news--marquee-scrolling {
+  animation: marquee 30s linear infinite;
+  display: block;
+  min-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  -webkit-animation: marquee 30s linear infinite;
+}
+.footer__news--NY-Times {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__news--NY-Times-icon {
+  height: 20px;
+  width: 20px;
+  background: black;
+  padding: 3px;
+  border-radius: 5px;
+}
+.footer__news--NY-Times-time {
+  font-size: 0.2em;
+  min-width: 120px;
+  color: #6a6a6c;
+}
+.footer__news--NY-Times-time::before {
+  content: "NY Times";
+  margin-right: 10px;
+  font-size: 4em;
+}
+.footer__news--Coindesk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__news--Coindesk-icon {
+  height: 20px;
+  width: 20px;
+  background: black;
+  padding: 3px;
+  border-radius: 5px;
+}
+.footer__news--Coindesk-time {
+  font-size: 0.2em;
+  min-width: 120px;
+  color: #6a6a6c;
+}
+.footer__news--Coindesk-time::before {
+  content: "Coindesk";
+  margin-right: 10px;
+  font-size: 4em;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
