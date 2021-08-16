@@ -2,4 +2,10 @@
   background: $bg-color-main;
   font-family: "Roboto", sans-serif;
   // max-width: 1280px;
+
+  display: grid;
+  grid-template:
+    "header profile"
+    "main profile";
+  grid-template-columns: auto 5em;
 }

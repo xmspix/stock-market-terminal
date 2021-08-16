@@ -54,7 +54,8 @@
 
   &__add {
     &::before {
-      content: "+";
+      @include font-awesome("\f067");
+      // content: "+";
       margin-right: 5px;
     }
   }

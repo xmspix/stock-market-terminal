@@ -2,6 +2,7 @@
   @include hover;
   cursor: pointer;
   border: 0;
+  position: relative;
 
   &__light {
     padding: 7px;
@@ -108,5 +109,23 @@
       @include font-awesome("\f542");
       margin-right: 5px;
     }
+  }
+  &__gear {
+    margin-right: 5px;
+    &::before {
+      @include font-awesome("\f013");
+      margin-right: 5px;
+    }
+  }
+
+  &__friend-add {
+    background: #4d8c7a;
+    color: #ccc;
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
   }
 }

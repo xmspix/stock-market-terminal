@@ -19,8 +19,8 @@
             <img class="logo logo__header" src="./images/logo.png" alt="Stock Market Terminal" />
             <button class="btn btn__menu fa">Menu</button>
         </div>
-        <div class="search header__search">
-            <i class="search__icon fa fa-search"></i>
+        <div class="header__search">
+            <i class="search search__icon fa fa-search"></i>
             <input class="search__input" type="text" placeholder="Search" />
         </div>
         <nav class="header__nav">
@@ -41,7 +41,9 @@
             <i class="header__status-refresh fas fa-sync-alt"></i>
             <p class="header__status-text">Connected</p>
         </div>
-        <i class="header__menu fas fa-cog"></i>
+        <div class="header__menu">
+            <i class="btn fas fa-cog"></i>
+        </div>
     </header>
 
     <main class="main">
@@ -430,7 +432,8 @@
         <section class="widget">
             <div class="widget__bar">
                 <div class="widget__tab">
-                    <p class="widget__tab--title">Position Tracker <span class="notification">4</span></p>
+                    <p class="widget__tab--title">Position Tracker <span
+                            class="notification notification--gray">4</span></p>
                     <i class="widget__tab-close fas fa-times"></i>
                 </div>
                 <div class="widget__buttons">
@@ -634,6 +637,37 @@
 
         </section>
     </main>
+
+    <aside class="profile">
+        <div class="profile__container">
+            <img class="profile__pic" src="./images/me.jpg" alt="Mark Stoler">
+        </div>
+        <div class="profile__options">
+            <i class="btn far fa-user"></i>
+            <i class="btn far fa-comment-alt">
+                <span class="notification notification--top-red">1</span>
+            </i>
+            <i class="btn fas fa-phone-alt"></i>
+        </div>
+        <div class="profile__friends-container">
+            <div class="profile__friends">
+                <img class="profile__pic" src="./images/Olivia Jacobs.jpg" alt="Olivia Jacobs">
+                <img class="profile__pic" src="./images/Aliah Pitts.jpg" alt="Aliah Pitts">
+                <div class="profile__friend">
+                    <img class=" profile__pic" src="./images/Andreas Brixen.jpg" alt="Andreas Brixen">
+                    <span class="notification notification--friend-red">1</span>
+                </div>
+                <img class="profile__pic" src="./images/Arnob Mukherjee.jpg" alt="Arnob Mukherjee">
+                <img class="profile__pic" src="./images/Jordan Singer.jpg" alt="Jordan Singer">
+                <img class="profile__pic" src="./images/June Cha.jpg" alt="June Cha">
+                <img class="profile__pic" src="./images/konsta peura.jpg" alt="konsta peura">
+                <img class="profile__pic" src="./images/leo gill.jpg" alt="leo gill">
+                <img class="profile__pic" src="./images/Lucrecia Calder.jpg" alt="Lucrecia Calder">
+            </div>
+            <i class="btn btn__friend-add fas fa-plus"></i>
+        </div>
+
+    </aside>
 </body>
 
 </html>
