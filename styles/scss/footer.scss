@@ -5,7 +5,9 @@
     align-items: center;
     position: relative;
     justify-content: space-between;
-    grid-area: footer;
+    // grid-area: footer;
+    margin: 10px;
+    overflow: hidden;
 
     &__news {
         display: flex;

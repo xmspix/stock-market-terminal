@@ -129,9 +129,6 @@ html {
 .app {
   background: #313234;
   font-family: "Roboto", sans-serif;
-  display: grid;
-  grid-template: "header profile" "main profile" "footer profile";
-  grid-template-columns: auto 5em;
 }
 
 .logo__header {
@@ -282,6 +279,7 @@ html {
   margin-right: 5px;
 }
 .btn__friend-add {
+  margin-bottom: 5px;
   background: #4d8c7a;
   color: #ccc;
   padding: 10px;
@@ -316,7 +314,6 @@ html {
   align-items: center;
   color: #414244;
   height: 50px;
-  grid-area: header;
 }
 .header__logo-container {
   display: flex;
@@ -438,7 +435,6 @@ html {
   grid-template-columns: repeat(2, 1fr);
   row-gap: 10px;
   margin-top: 20px;
-  grid-area: main;
 }
 
 .widget {
@@ -847,11 +843,24 @@ html {
 
 .profile {
   grid-area: profile;
-  position: relative;
+  position: absolute;
   background: #2d2f32;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -1;
+}
+.profile__active {
+  opacity: 1;
+  z-index: 1;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 .profile__friends-container {
-  height: calc(100% - 220px);
+  height: calc(100vh - 203px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -920,7 +929,8 @@ html {
   align-items: center;
   position: relative;
   justify-content: space-between;
-  grid-area: footer;
+  margin: 10px;
+  overflow: hidden;
 }
 .footer__news {
   display: flex;
