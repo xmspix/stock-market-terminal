@@ -82,6 +82,7 @@
   font-variant: normal;
   text-rendering: auto;
   line-height: 1;
+  width: 0;
 }
 
 @mixin font-awesome-brands($content) {
@@ -95,4 +96,5 @@
   font-variant: normal;
   text-rendering: auto;
   line-height: 1;
+  width: 0;
 }

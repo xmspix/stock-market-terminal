@@ -33,7 +33,7 @@
         &--marquee {
             overflow: hidden;
             position: relative;
-            min-width: 80%;
+            width: 80%;
 
             &:not(:last-child) {
                 margin-right: 15px;
@@ -71,12 +71,12 @@
 
             &-time {
                 font-size: 0.2em;
-                min-width: 120px;
+                margin-right: 5px;
                 color: $font-color-gray;
 
                 &::before {
                     content: "NY Times";
-                    margin-right: 10px;
+                    margin: 0 5px;
                     font-size: 4em;
                 }
             }
@@ -98,12 +98,12 @@
 
             &-time {
                 font-size: 0.2em;
-                min-width: 120px;
+                margin-right: 5px;
                 color: $font-color-gray;
 
                 &::before {
                     content: "Coindesk";
-                    margin-right: 10px;
+                    margin: 0 5px;
                     font-size: 4em;
                 }
             }

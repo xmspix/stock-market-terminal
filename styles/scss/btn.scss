@@ -63,12 +63,12 @@
 
   &__select-left {
     @include radius-left-side;
-    margin-right: 2px;
+    margin-right: 1px;
   }
 
   &__select-right {
     @include radius-right-side;
-    margin-left: 2px;
+    margin-left: 1px;
   }
 
   &__timeframe {
@@ -99,7 +99,7 @@
 
     &::before {
       @include font-awesome("\f0ce");
-      margin-right: 5px;
+      margin-right: 20px;
     }
   }
 
@@ -107,14 +107,14 @@
     margin-right: 5px;
     &::before {
       @include font-awesome("\f542");
-      margin-right: 5px;
+      margin-right: 20px;
     }
   }
   &__gear {
     margin-right: 5px;
     &::before {
       @include font-awesome("\f013");
-      margin-right: 5px;
+      margin-right: 20px;
     }
   }
 

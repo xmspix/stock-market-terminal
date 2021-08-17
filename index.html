@@ -60,43 +60,49 @@
                 </div>
             </div>
             <div class="widget__toolbar">
-                <i class="favorite favorite__icon btn fas fa-star"></i>
-                <div class="widget__search">
-                    <i class="search search__icon fa fa-search"></i>
-                    <input class="search__input" type="text" placeholder="Search" />
-                </div>
-                <div class="select select__container">
-                    <select class="widget__select widget__select--wide" name="" id="">
-                        <option value="">1D</option>
-                        <option value="">W</option>
-                        <option value="">M</option>
-                        <option value="">Y</option>
-                    </select>
-                    <i class="btn btn__select btn__select-round fas fa-chevron-down"></i>
-                </div>
-                <div class="select select__container">
-                    <i class="btn btn__select btn__select-left fas fa-chevron-left"></i>
-                    <select class="widget__select" name="" id="">
-                        <option value="">General</option>
-                        <option value="">General 2</option>
-                        <option value="">General 3</option>
-                        <option value="">General 4</option>
-                    </select>
-                    <i class="btn btn__select btn__select-right fas fa-chevron-right"></i>
-                </div>
-                <div class="select select__container">
-                    <i class="btn btn__select btn__select-left fas fa-chevron-left"></i>
-                    <select class="widget__select" name="" id="">
-                        <option value="">Overview</option>
-                        <option value="">Overview 2</option>
-                        <option value="">Overview 3</option>
-                        <option value="">Overview 4</option>
-                    </select>
-                    <i class="btn btn__select btn__select-right fas fa-chevron-right"></i>
-                </div>
-                <div class="alert">
-                    <i class="btn btn__light alert__bell far fa-bell"></i>
-                    <i class="btn btn__light alert__menu fas fa-ellipsis-v"></i>
+                <div class="items">
+                    <div class="items__left">
+                        <i class="favorite favorite__icon btn fas fa-star"></i>
+                        <div class="widget__search">
+                            <i class="search search__icon fa fa-search"></i>
+                            <input class="search__input" type="text" placeholder="Search" />
+                        </div>
+                        <div class="select select__container">
+                            <select class="widget__select widget__select--wide" name="" id="">
+                                <option value="">1D</option>
+                                <option value="">W</option>
+                                <option value="">M</option>
+                                <option value="">Y</option>
+                            </select>
+                            <i class="btn btn__select btn__select-round fas fa-chevron-down"></i>
+                        </div>
+                        <div class="select select__container">
+                            <i class="btn btn__select btn__select-left fas fa-chevron-left"></i>
+                            <select class="widget__select" name="" id="">
+                                <option value="">General</option>
+                                <option value="">General 2</option>
+                                <option value="">General 3</option>
+                                <option value="">General 4</option>
+                            </select>
+                            <i class="btn btn__select btn__select-right fas fa-chevron-right"></i>
+                        </div>
+                        <div class="select select__container">
+                            <i class="btn btn__select btn__select-left fas fa-chevron-left"></i>
+                            <select class="widget__select" name="" id="">
+                                <option value="">Overview</option>
+                                <option value="">Overview 2</option>
+                                <option value="">Overview 3</option>
+                                <option value="">Overview 4</option>
+                            </select>
+                            <i class="btn btn__select btn__select-right fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="items__right">
+                        <div class="alert">
+                            <i class="btn btn__light alert__bell far fa-bell"></i>
+                            <i class="btn btn__light alert__menu fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="widget__body">
@@ -443,28 +449,35 @@
                 </div>
             </div>
             <div class="widget__toolbar">
-                <button class="btn btn__light btn__round-corners icon__chart">Graph</button>
-                <button class="btn btn__light btn__round-corners icon__add">Add</button>
+                <div class="items">
+                    <div class="items__left">
+                        <button class="btn btn__light btn__round-corners icon__chart">Graph</button>
+                        <button class="btn btn__light btn__round-corners icon__add">Add</button>
 
-                <div class="select select__container">
-                    <i class="btn btn__select btn__select-left fas fa-chevron-left"></i>
-                    <span class="widget__select icon__filter">All Brokers</span>
-                    <i class="btn btn__select btn__select-right fas fa-chevron-right"></i>
+                        <div class="select select__container">
+                            <i class="btn btn__select btn__select-left fas fa-chevron-left"></i>
+                            <span class="widget__select icon__filter">All Brokers</span>
+                            <i class="btn btn__select btn__select-right fas fa-chevron-right"></i>
+                        </div>
+
+                        <div class="select select__container icon__crypto">
+                            <span class="widget__select widget__select--wide">Crypto</span>
+                            <i class="btn btn__select btn__select-round fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="items__right">
+                        <div class="widget__switch">
+                            <span class="widget__switch--title">AGGREGATED</span>
+                            <label class="switch">
+                                <!-- <input type="checkbox" checked> -->
+                                <input type="checkbox" />
+                                <span class="switch__slider switch__slider--round"></span>
+                            </label>
+                        </div>
+
+                    </div>
                 </div>
 
-                <div class="select select__container icon__crypto">
-                    <span class="widget__select widget__select--wide">Crypto</span>
-                    <i class="btn btn__select btn__select-round fas fa-chevron-down"></i>
-                </div>
-
-                <div class="widget__switch">
-                    <span class="widget__switch--title">AGGREGATED</span>
-                    <label class="switch">
-                        <!-- <input type="checkbox" checked> -->
-                        <input type="checkbox" />
-                        <span class="switch__slider switch__slider--round"></span>
-                    </label>
-                </div>
             </div>
             <div class="widget__body">
                 <table class="table table__position">

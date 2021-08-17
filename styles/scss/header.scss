@@ -36,13 +36,8 @@
   }
 
   &__nav {
-    display: flex;
-    align-items: center;
-    margin: auto;
-
-    // &::after {
-    //   @include navbar_border_left();
-    // }
+    flex: 1;
+    margin: 0 25px;
   }
 
   &__list {

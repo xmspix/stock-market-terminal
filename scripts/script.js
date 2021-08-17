@@ -11,7 +11,7 @@ const profile = () => {
         // than hide
         // console.log('profile active');
         document.querySelector('.profile').classList.remove("profile__active");
-        document.querySelector('.app').style.width = "unset";
+        document.querySelector('.app').style.width = "100%";
 
     } else {
         // than show
