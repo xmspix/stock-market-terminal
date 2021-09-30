@@ -2,9 +2,9 @@
 
 ![text](./images/terminal.png)
 
-### Information
-Converting this image to HTML page.
-
 ### Demo 
-**Work in progress !!!**
-https://xmspix.github.io/stock-market-terminal
+ https://xmspix.github.io/stock-market-terminal
+
+### Information
+This is a basic template project, converting this image to HTML page. </p>
+Full project can be found here: https://github.com/xmspix/stock-market
